@@ -1,0 +1,106 @@
+.flex-container {
+  padding: 10px;
+  width: 100%;
+  height: 200px;
+  text-align: left;
+}
+
+.flex-box {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-box .card {
+  padding: 15px;
+  font-size: 25px;
+  width: 394px;
+  background-image: radial-gradient(#869adb, #7373ec);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  color: white;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.flex-box .card h2 {
+  text-align: center;
+}
+
+.topic {
+  text-decoration: none;
+  text-align: end;
+  font-style: italic;
+  color: blanchedalmond;
+}
+
+.more {
+  text-align: center;
+}
+
+.delete-card {
+  background-color: white;
+}
+
+.delete-card:hover {
+  cursor: default;
+}
+
+.delete-card:hover::after {
+  content: 'Edit | Delete';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  color: black;
+  pointer-events: none;
+}
+
+.delete-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.delete-card:hover::before {
+  content: 'Delete';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  color: black;
+  pointer-events: none;
+}
+
+.delete-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 0, 0, 0.8);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.delete-card:hover::after,
+.delete-card:hover::before {
+  opacity: 1;
+}
+
+.delete-buttons button{
+  width: 40px;
+  height: 35px;
+  font-size: 18px;
+}

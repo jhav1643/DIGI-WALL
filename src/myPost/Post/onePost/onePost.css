@@ -1,0 +1,74 @@
+.newBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.newContent {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  height:600px;
+  width: 350px;
+}
+
+.name{
+  font-size: 1.7rem;
+  margin-top: 19px;
+  font-weight: 550;
+}
+
+#post{
+  font-weight: 700;
+  font-size: 30px;
+  color: rgb(139, 58, 0);
+}
+
+
+
+.postName input[type="text"]{
+  width: 320px;
+  padding: 4px;
+  font-weight: 300;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.btn{
+  font-size: 20px;
+  background-color: rgb(252, 124, 124);
+  outline: none;
+  border-radius: .74rem;
+  width: 130px;
+  height: 50px;
+  font-size: 24px;
+  border-color: rgba(222, 211, 211, 0.89);
+  cursor: pointer;
+  font-weight: 550;
+  color: rgb(14, 16, 50);
+}
+.btn:hover{
+  background-color: rgb(255, 91, 91);
+  width: 135px;
+  height: 54px;
+  font-weight: 700;
+}
+
+.bt{
+  text-align: center;
+}
+
+.pimage input[accept="image/*"] {
+  font-size: 24px;
+  border: 2px solid balck;
+  margin-bottom: 50px;
+  margin-top: 22px;
+}

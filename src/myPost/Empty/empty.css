@@ -1,0 +1,49 @@
+.post{
+    font-size: 1.65rem;
+    display: flex;
+    font-weight: 900;
+    margin-top: 1rem;
+}
+
+.post h1{
+    margin-left: 2rem;
+    color: rgb(42, 42, 34);
+}
+
+.post span button{
+    width: 211px;
+    height: 70px;
+    margin-top: 2rem;
+    text-align: center;
+    flex-direction: row;
+    margin-left: 87rem;
+    background-color: rgb(236, 151, 151);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.post span button:hover{
+    background-color: rgb(252, 116, 116);
+}
+
+.img{
+    text-align: center;
+}
+
+.img img{
+    width: 32rem;
+    height: 32rem;
+}
+
+.lineOne{
+    text-align: center;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.line2{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 3px;
+}
